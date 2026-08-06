@@ -1,0 +1,190 @@
+/* Reset básico de margens e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent-color: #38bdf8;
+    --accent-hover: #0284c7;
+    --border-color: #050a11;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.7;
+    padding: 20px;
+}
+
+/* Centralização do conteúdo */
+header, main, footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+/* Estrutura do Artigo */
+article {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: var(--accent-color);
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin: 20px 0 10px 0;
+}
+
+p {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+ul, ol {
+    margin: 15px 0 15px 25px;
+    color: var(--text-secondary);
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+li strong {
+    color: var(--text-primary);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 30px 0;
+}
+
+/* Tabelas Responsivas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95rem;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid var(--border-color);
+}
+
+th {
+    background-color: #0f172a;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+td {
+    color: var(--text-secondary);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--text-secondary);
+}
+
+footer section {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    article {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}

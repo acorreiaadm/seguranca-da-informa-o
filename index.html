@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech - Segurança da Informação em 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+        <h1>Segurança da Informação: O que é, fundamentos e como aplicar em 2026</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#o-que-e">O que é?</a></li>
+                <li><a href="#triade-cia">Tríade CIA</a></li>
+                <li><a href="#normas">Normas e Leis</a></li>
+                <li><a href="#tendencias-2026">Tendências 2026</a></li>
+                <li><a href="#carreira">Carreira</a></li>
+                <li><a href="#autor">Sobre o Autor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="artigo">
+            
+            <!-- Seção 1: Conceito -->
+            <section id="o-que-e">
+                <h2>O que é segurança da informação?</h2>
+                <p>Segurança da informação é o conjunto de práticas, políticas, processos e tecnologias usados para proteger informações importantes contra acesso não autorizado, divulgação, uso indevido, alteração ou destruição.</p>
+                <p>O objetivo é garantir que dados sensíveis permaneçam disponíveis para quem precisa deles, sigilosos para quem não deveria acessá-los e íntegros do início ao fim do ciclo de vida.</p>
+                <p>Os ativos protegidos incluem arquivos digitais, dados estruturados em bancos, documentos físicos, mídia gravada e até comunicação verbal.</p>
+                <p>A disciplina não se limita ao mundo digital. Ela cobre infraestrutura, software, testes, auditoria e arquivamento ao longo de toda a jornada da informação dentro da organização.</p>
+                
+                <h3>Segurança da Informação vs. Cibersegurança</h3>
+                <p>Vale separar dois termos que frequentemente se confundem:</p>
+                <ul>
+                    <li><strong>Segurança da Informação:</strong> O conceito mais amplo. Protege qualquer informação valiosa, em qualquer suporte (físico, digital ou falado).</li>
+                    <li><strong>Cibersegurança:</strong> Uma subárea focada em proteger ativos digitais contra ameaças vindas da internet e de redes conectadas.</li>
+                </ul>
+                <p>Em ambientes corporativos modernos, as duas áreas trabalham juntas e dependem cada vez mais de análise de dados para identificar padrões de risco em escala.</p>
+            </section>
+
+            <hr>
+
+            <!-- Seção 2: Tríade CIA -->
+            <section id="triade-cia">
+                <h2>Tríade CIA: Os fundamentos da segurança da informação</h2>
+                <p>A tríade CIA (Confidentiality, Integrity, Availability) é o modelo conceitual mais consolidado da disciplina. Reúne três princípios que orientam decisões de arquitetura, controles técnicos e políticas internas.</p>
+
+                <table border="1" cellpadding="10" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Pilhar</th>
+                            <th>O que significa?</th>
+                            <th>Exemplo de Ameaça</th>
+                            <th>Medida de Proteção</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Confidencialidade</strong></td>
+                            <td>Garantir que os dados sejam acessíveis apenas por pessoas authorized.</td>
+                            <td>Vazamento de senhas ou espionagem industrial.</td>
+                            <td>Criptografia de dados e Autenticação Multifator (MFA).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Integridade</strong></td>
+                            <td>Assegurar que a informação não seja alterada ou adulterada sem autorização.</td>
+                            <td>Ataques Man-in-the-Middle ou infecção por malware.</td>
+                            <td>Funções de Hash (SHA-256) e assinaturas digitais.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Disponibilidade</strong></td>
+                            <td>Garantir que os sistemas e dados estejam acessíveis sempre que necessário.</td>
+                            <td>Ataques de Negação de Serviço (DDoS) ou falhas de hardware.</td>
+                            <td>Backups redundantes e arquiteturas em nuvem resilientes.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+
+            <!-- Seção 3: Normas e Legislação -->
+            <section id="normas">
+                <h2>Quais as normas e leis mais importantes?</h2>
+                <p>Para estruturar um programa eficiente de segurança, empresas do mundo todo utilizam frameworks padronizados internacionalmente e precisam adequar-se às legislações de privacidade:</p>
+                
+                <ol>
+                    <li><strong>ISO/IEC 27001:</strong> O padrão internacional definitivo para Gestão de Segurança da Informação (SGSI). Define como implementar, manter e melhorar continuamente a segurança.</li>
+                    <li><strong>NIST Cybersecurity Framework:</strong> Estrutura muito empregada para identificar, proteger, detectar, responder e recuperar sistemas de potenciais ataques.</li>
+                    <li><strong>LGPD (Lei Geral de Proteção de Dados - Brasil):</strong> Regulamenta o tratamento de dados pessoais de indivíduos, exigindo transparência, consentimento e punindo severamente vazamentos.</li>
+                </ol>
+            </section>
+
+            <hr>
+
+            <!-- Seção 4: Tendências para 2026 -->
+            <section id="tendencias-2026">
+                <h2>O cenário de segurança da informação em 2026</h2>
+                <p>O ecossistema de ameaças evoluiu drasticamente. Em 2026, três grandes pilares moldam a atuação dos profissionais da área:</p>
+                
+                <ul>
+                    <li><strong>Ataques potencializados por IA:</strong> Criminosos utilizam inteligência artificial gerativa para criar ataques de <em>phishing</em> altamente personalizados e imitar voz e imagem (Deepfakes) em fraudes financeiras.</li>
+                    <li><strong>Arquitetura Zero Trust (Confiança Zero):</strong> O modelo antigo de "perímetro seguro" morreu. A regra agora é <em>"nunca confie, sempre verifique"</em> — toda requisição de acesso precisa ser autenticada e autorizada, mesmo vindo de dentro da rede.</li>
+                    <li><strong>Segurança na Nuvem e na Cadeia de Suprimentos:</strong> Com a descentralização do trabalho, garantir a segurança de fornecedores de software e APIs de terceiros tornou-se prioridade crítica.</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <!-- Seção 5: Carreira -->
+            <section id="carreira">
+                <h2>Como construir carreira na área?</h2>
+                <p>O caminho típico combina fundamentos técnicos (redes, sistemas operacionais, programação) com formação específica em segurança.</p>
+                <p>A demanda por talentos é alta e a evolução de carreira é rápida para quem mantém atualização contínua.</p>
+
+                <h3>Principais Certificações Reconhecidas</h3>
+                <ul>
+                    <li><strong>Iniciante:</strong> CompTIA Security+</li>
+                    <li><strong>Intermediário (Prático/Ofensivo):</strong> Certified Ethical Hacker (CEH) ou Offensive Security Certified Professional (OSCP)</li>
+                    <li><strong>Avançado (Gestão):</strong> CISSP (Certified Information Systems Security Professional)</li>
+                </ul>
+
+                <p>Práticas <em>hands-on</em> em plataformas de laboratório virtual como <strong>TryHackMe</strong> e <strong>HackTheBox</strong> aceleram drasticamente o aprendizado prático de novos analistas.</p>
+            </section>
+
+        </article>
+    </main>
+
+    <hr>
+
+    <footer>
+        <section id="autor">
+            <h3>Sobre o Autor</h3>
+            <p><strong>João Silva Fictício</strong> - Jornalista e criador de conteúdo especializado em tecnologia, cibersegurança e cultura digital.</p>
+        </section>
+
+        <p><small>&copy; 2026 Meu Blog. Todos os direitos reservados.</small></p>
+    </footer>
+
+</body>
+</html>
